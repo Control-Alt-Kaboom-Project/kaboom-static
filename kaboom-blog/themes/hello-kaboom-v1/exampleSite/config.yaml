@@ -1,0 +1,145 @@
+baseURL: 'https://kaboom.net/'
+languageCode: 'pt-pt'
+theme: "hello-friend-kaboom"
+author: 
+  name: "kaboomdotnet"
+title: 'kaboom.net'
+copyright: "All Rights Reserved"
+IsMultiLingual: true
+defaultContentLanguage: pt-pt
+
+languages:
+  pt-pt:
+    weight: 1
+    languageName: "Portugues"
+  en:
+    weight: 2
+    params: 
+      backgroundImage: "../assets/kaboombg.gif"
+    menu: 
+      main:
+        - identifier: "posts"
+          name: "Posts"
+          url: "/posts" 
+          weight: 1
+
+        - identifier: "about"
+          name: "About"
+          url: "https://cv.kaboom.net"
+          weight: 2
+
+        - identifier: "projects"
+          name: "Projects"
+          url: "/projects"
+        - identifier: "PiVPN"
+          name: "PiVPN"
+          url: "https://pivpn.io"
+          parent: "projects"
+        - identifier: "tools"
+          name: "Tools"
+        - identifier: "short"
+          name: "Short Links"
+          url: "https://s.kaboom.net"
+          parent: "tools"
+    #     weight: 10
+        - identifier: "wb"
+          name: "Whiteboard"
+          parent: "tools"
+
+
+
+params:
+  defaultTheme: "dark"
+  EnableThemeToggle: true 
+# gitUrl: "https://github.com/kaboom"
+  EnableSharingButtons: true
+  EnableGlobalLanguageMenu: true
+  backgroundImage: "assets/kaboombg.gif"
+  backgroundEffects: true
+  showPosts: true
+  tags: true
+# hideReadMore: true
+  ReadMoreText: true
+# ReadMore: "foo"
+# socialIcons: true
+# homeTitle: "Title"
+# homeSubtitle: "Subtitle"
+  fontAwesome:
+    KitURL: "https://kit.fontawesome.com/0ed5cec925.js"
+  ShowReadingTime: true
+  LastModDisplay: true
+  tags: true
+  logo:
+    logoText: "kaboom.net"
+    logoCursorColor: "#ffffff"
+  social:
+    - name: "github"
+      url: "https://github.com/kaboom"
+    - name: "CV"
+      url: "https://cv.kaboom.net"
+      icon: fa-solid fa-terminal
+    - name: "youtube"
+      url: "https://youtube.com/cfcolaco"
+    - name: "twitter"
+      url: "https://twitter.com/kaboom/"
+    - name: "instagram"
+      url: "https://www.instagram.com/c4colaco/"
+    - name: "twitch"
+      url: "https://twitch.tv/kaboom"
+    - name: "Buy me a coffee"
+      url: "https://www.buymeacoffee.com/kaboom"
+      icon: fa-solid fa-coffee
+  footer:
+    showVersion: true
+    socialIcons: true
+    author: true
+    rss: true
+    trademark: true
+    copyright: true
+#   topText:  ["Footer Top text"]
+    bottomText: [
+      "Powered by <a href=\"http://gohugo.io\">Hugo</a>", 
+      "with <a href=\"#\">Hello-friend-kaboom</a>",
+    ]
+    
+
+
+taxonomies:
+  tag: "tags"
+  category: "blog"
+
+menu:
+  main:
+    - identifier: "about"
+      name: "Sobre"
+      url: "https://cv.kaboom.net"
+      weight: 2
+
+    - identifier: "posts"
+      name: "Posts"
+      url: "/posts"
+      weight: 1
+
+    - identifier: "tools"
+      name: "Ferramentas"
+
+    - identifier: "projects"
+      name: "Projetos"
+      url: "/projects"
+
+    - identifier: "PiVPN"
+      name: "PiVPN"
+      url: "https://pivpn.io"
+      parent: "projects"
+    - identifier: "short"
+      name: "Diminuir Links"
+      url: "https://s.kaboom.net"
+      parent: "tools"
+    - identifier: "whiteboard"
+      name: "Quadro Branco"
+      parent: "tools"
+      url: "https://wb.kaboom.net"
+    - identifier: "PrivateBin"
+      name: "PrivateBin"
+      parent: "tools"
+      url: "httls://paste.kaboom.net"

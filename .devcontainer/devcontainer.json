@@ -32,7 +32,8 @@
 				"budparr.language-hugo-vscode",
 				"rusnasonov.vscode-hugo",
 				"aldijav.golangwithdidi",
-				"joaoacdias.golang-tdd"
+				"joaoacdias.golang-tdd",
+				"dionmunk.vscode-notes"
 			]
 		}
 	},
